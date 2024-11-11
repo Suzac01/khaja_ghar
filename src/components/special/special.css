@@ -1,0 +1,135 @@
+.special-categories {
+    margin-top: 20px;
+  }
+  
+  .special-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+  }
+  
+  .special-title {
+    font-weight: bold;
+  }
+  
+  .special-see-more {
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  .special-arrow {
+    color: #61e26e;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 65px;
+    font-size: 50px;
+    display: inline-block;
+    line-height: 1;
+    margin-bottom: -10px;
+  }
+  
+  /* Special Card Wrapper for Flexbox Layout */
+  .special-card-wrapper {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  /* Special Card Container */
+  .special-card-container {
+    width: 18rem;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1); /* Adjust shadow position and size */
+    border-radius: 38px;
+    overflow: hidden;
+    margin-left: 55px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Special Card Background */
+  .special-card-background {
+    position: relative;
+    height: 260px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .special-card-eclipse {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .special-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Special Card Rating */
+  .special-card-rating {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .special-rating-text {
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 200px;
+  }
+  
+  .special-rating-star {
+    font-size: 30px;
+    color: #FFA500;
+  }
+  
+  /* Special Card Body */
+  .special-card-body {
+    padding: 20px;
+    text-align: left;
+  }
+
+  .special-card-container {
+    position: relative; /* For positioning the favorite icon */
+    /* Other existing styles... */
+  }
+  
+  .favorite-effect {
+    position: absolute; /* Absolutely position the favorite effect */
+    top: -15px; /* Move it slightly above the card */
+    right: -15px; /* Move it outside the right edge */
+    background-color: #61e26e; /* Set the background color to green */
+    width: 80px; /* Make the circle large */
+    height: 80px; /* Make the circle large */
+    border-radius: 0 0 0 40px; /* This creates a circular shape */
+    display: flex; /* Flexbox for centering the icon */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    box-shadow: none; /* Remove any 3D shadow */
+    z-index: 1; /* Ensure it doesn't interfere with the ratings */
+  }
+  
+  .favorite-icon {
+    color: red; /* Flat red color for the heart */
+    font-size: 24px; /* Adjust size as necessary */
+    margin-top: 12px;
+    margin-right: 12px;
+  }
+  
+  /* Make sure the rest of the content flows normally below */
+  .special-rating-text, .special-rating-star {
+    position: relative;
+    z-index: 2; /* Ensure the rating content stays above the circle */
+  }
+  
+  
+  

@@ -1,0 +1,46 @@
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 5px; 
+}
+
+.footer-column {
+  flex: 1;
+  margin: 0 15px;
+}
+
+.footer-column ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove default padding */
+}
+
+.social-icons {
+  display: flex;
+  gap: 2px; /* Controls the space between icons */
+}
+
+.social-icons a img {
+  width: 24px;
+  height: 24px;
+  padding: 0; /* Remove unnecessary padding */
+}
+
+
+.footer-column li {
+  margin-bottom: 10px; /* Space between items */
+}
+
+.footer-column p {
+  margin: 0; /* Remove default margin */
+}
+
+.footer-column span {
+  font-weight: bold; /* Optional: Make the span text bold */
+}

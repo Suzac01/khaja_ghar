@@ -1,0 +1,237 @@
+.container-full {
+    position: relative; /* Ensures positioning context for child elements */
+    width: 100%; /* Ensure it takes the full width */
+    height: 100vh; /* Full height of the viewport */
+  }
+  
+  .image-wrapper {
+    position: relative;
+    display: inline-block; /* Ensures the wrapper fits the size of the image */
+    overflow: hidden; /* Hides the overflow of the image */
+    height: 100%; /* Fills the height of the parent container */
+    width: 100%; /* Fills the width of the parent container */
+  }
+  
+  .image-wrapper img {
+    display: block;
+    width: 100%; /* Ensures the image takes the full width of the wrapper */
+    height: 100%; /* Ensures the image takes the full height of the wrapper */
+    object-fit: cover; /* This property makes the image cover the entire wrapper */
+    position: relative; /* Positioning for the image */
+  }
+  
+  .image-wrapper::before { /* Use ::before for the overlay */
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Black overlay with 90% opacity */
+    pointer-events: none; /* Prevents the overlay from blocking interactions */
+    z-index: 1; /* Make sure overlay is on top */
+  }
+  
+  /* Box Style */
+  .box {
+    height: 80%;
+    width: 80%;
+    position: absolute; /* Position it relative to the parent container */
+    top: 47%; /* Center it vertically */
+    left: 50%; /* Center it horizontally */
+    transform: translate(-50%, -50%); /* Adjust for its own width and height */
+    border-radius: 30px; /* Rounded corners */
+    border: 2px solid white; /* White outline */
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent background */
+    color: white; /* Text color */
+    z-index: 2; /* Above the overlay */
+    display: flex; /* Use flexbox for layout */
+  }
+  
+  /* Left and Right Section */
+  .left-section {
+    flex: 1; /* Each section takes up equal space */
+    padding: 10px; /* Space inside sections */
+    width: 50px;
+  }
+  
+  /* Divider Line */
+  .divider {
+    width: 2px; /* Width of the divider line */
+    background-color: white; /* Color of the divider line */
+  }
+  
+  /* Form Inputs */
+  input {
+    width: 100%; /* Full width of input */
+    padding: 8px; /* Space inside input */
+    border-radius: 5px; /* Rounded corners for inputs */
+    border: 1px solid white; /* White border */
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent background */
+    color: black; /* Text color */
+    margin-bottom: 10px; /* Space below each input */
+  }
+  
+  /* Button */
+  button {
+    width: 100%; /* Full width of button */
+    padding: 10px; /* Space inside button */
+    border-radius: 5px; /* Rounded corners for button */
+    border: none; /* No border */
+    background-color: white; /* White background */
+    color: black; /* Text color */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  /* Social Icons Section */
+  .social-icons {
+    display: flex; /* Align icons in a row */
+    justify-content: space-between; /* Space between icons */
+    margin-top: 10px; /* Space above the social icons */
+  }
+  
+  .social-icons img {
+    width: 30px; /* Width of the icons */
+    height: 30px; /* Height of the icons */
+  }
+  
+  .right-section{
+    background-color: rgba(0, 0, 0, 0.3); /* Black with 10% opacity */
+    padding: 20px;
+    width: 50%;
+  }
+
+  .internal-box{
+    margin-top: 40px;
+    height: 70%;
+    margin-left: 10%;
+    width: 80%;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: black;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 10% opacity */
+  }
+
+  .divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .divider::before,
+  .divider::after {
+    
+    flex: 1;
+    border-bottom: 1px solid white; /* Line color */
+    margin: 0 10px; /* Adjust the spacing between line and text */
+  }
+  
+  .divider-text {
+    color: white; /* Text color */
+    font-weight: bold;
+    padding: 0 10px;
+  }
+  
+  .separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .separator::before, .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid white;
+  }
+  
+  .separator::before {
+    margin-right: 10px;
+  }
+  
+  .separator::after {
+    margin-left: 10px;
+  }
+  
+  .separator span {
+    white-space: nowrap;
+    padding: 0 10px;
+    font-size: 16px;
+    color: white;
+  }
+
+  .contents{
+    margin-left: 20px; 
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px; /* Adjust gap between icons */
+  }
+  
+  .icon-container {
+    position: relative;
+    display: inline-block;
+    width: 50px; /* Adjust width according to the image size */
+    height: 50px; /* Adjust height according to the image size */
+    background-image: url('../../assets/login_pics/rec.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .icon-container img {
+    position: relative;
+    width: 38px !important; /* Adjust icon size */
+    height: 38px !important;
+    z-index: 1; /* Ensure icon is above the background */
+    display: block;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .left-section {
+    position: relative; /* Allows absolute positioning of h4 inside the container */
+    width: 100%;
+  }
+  
+  .left-section img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .left-section {
+    position: relative; /* Enable absolute positioning of logo */
+    width: 100%;
+  }
+  
+  .left-section .logo {
+    position: absolute;
+    top: 10px; /* Adjust top padding as needed */
+    left: 10px; /* Adjust left padding as needed */
+    width: 50px; /* Set the width of the logo */
+    height: auto; /* Keep the aspect ratio */
+    z-index: 2; /* Ensure the logo appears on top of everything */
+  }
+  
+  .left-section img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .left-section h4 {
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #CBD27D;
+    text-shadow: 2px 8px 4px rgba(0, 0, 0, 15); /* Shadow */
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 1;
+    padding: 10px;
+  }
+  
+

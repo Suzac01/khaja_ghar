@@ -1,0 +1,101 @@
+/* Main card container for flexbox layout */
+.card-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px; /* 20px spacing between the cards */
+    flex-wrap: wrap; /* Allows the cards to wrap if the screen is too small */
+    padding: 20px; /* Padding around the card wrapper */
+  }
+  
+  /* Feature Restaurants header */
+  .feature-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+  }
+  
+  /* Green Background Rectangle */
+  .card-container {
+    margin-left: 55px;
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Additional styles for consistency */
+  .card-background {
+    width: 100%;
+    height: 300px;
+    background-color: rgba(97, 226, 110, 0.5); /* Green background */
+    border-radius: 6px 6px 0 0; /* Top corners rounded */
+    position: relative;
+  }
+  
+  .card-eclipse {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 230px; /* Diameter of the eclipse */
+    height: 230px;
+    border-radius: 50%; /* Circle shape */
+    overflow: hidden; /* Ensures the image stays inside the circle */
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    text-align: left;
+    padding: 20px;
+  }
+  
+  /* Rating and star positioning */
+  .card-rating {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .rating-text {
+    font-weight: 500;
+    font-size: 16px;
+    color: #000; /* Black text */
+    margin-right: 5px;
+  }
+  
+  .rating-star {
+    font-size: 30px;
+    color: #FFA500; /* Golden color */
+  }
+  
+  /* Feature header */
+  .title {
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .see-more {
+    margin-top: -30px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  .arrow {
+    color: #61e26e;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 65px;
+    font-size: 50px;
+    display: inline-block;
+    line-height: 1;
+    margin-bottom: -10px;
+  }
+  

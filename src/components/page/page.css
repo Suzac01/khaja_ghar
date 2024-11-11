@@ -1,0 +1,12 @@
+.btnn {
+    background-color: #61e26e; 
+    color: white; 
+    border: none; 
+    font-size: 25px;
+    width:25%;
+    font-weight: bold;
+    border-radius: 25px; 
+    padding: 10px 10px; 
+    cursor: pointer;
+}
+

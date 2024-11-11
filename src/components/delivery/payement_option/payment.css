@@ -1,0 +1,66 @@
+.bo {
+    border: 2px solid #ccc; /* Thin outline */
+    border-radius: 8px; /* Border radius */
+    width: 166%; /* Adjust as needed */
+    margin: 20px auto;
+    margin-left: 20%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .form-contr {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    margin-bottom: 15px;
+    padding: 20px;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  input[type='text'] {
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    color:black;
+  }
+
+  .full-width-input {
+    grid-column: 1 / -1; /* Spans the full width of the container */
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .form-contain {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 2px;
+    padding: 20px;
+    text-align: left;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    gap: 1px; /* Slight gap between radio button and label text */
+    font-size: 16px;
+    margin: 0;
+    padding: 5px 0;
+    white-space: nowrap; /* Prevents wrapping of text */
+}
+
+input[type="radio"] {
+    flex-shrink: 0; /* Keeps the radio button small */
+    margin: 0; /* Removes any default margin */
+    transform: scale(0.9); /* Slightly reduces radio button size */
+    width: 10%;
+  }
+  
+  
